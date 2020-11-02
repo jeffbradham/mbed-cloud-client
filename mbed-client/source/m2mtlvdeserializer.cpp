@@ -256,7 +256,7 @@ M2MTLVDeserializer::Error M2MTLVDeserializer::deserialize_resource_instances(con
     til.deserialize();
     offset = til._offset;
 
-    if (TYPE_MULTIPLE_RESOURCE == til._type || TYPE_RESOURCE_INSTANCE == til._type) {
+    if (TYPE_RESOURCE_INSTANCE == til._type) {
         const M2MResourceInstanceList &list = resource.resource_instances();
         M2MResourceInstanceList::const_iterator it;
         it = list.begin();
